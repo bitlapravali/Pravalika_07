@@ -1,0 +1,92 @@
+1. What will be the output of the following Java code?
+
+a) 0
+b) value stored in arr[0]
+c) 00000
+d) Class name@ hashcode in hexadecimal form
+Answer: d
+Explanation: If we trying to print any reference variable internally, toString() will be called which is implemented to return the String in following form:
+classname@hashcode in hexadecimal form
+
+2. Which of these is an incorrect Statement?
+a) It is necessary to use new operator to initialize an array
+b) Array can be initialized using comma separated expressions surrounded by curly braces
+c) Array can be initialized when they are declared
+d) None of the mentioned
+Answer: a
+Explanation: Array can be initialized using both new and comma separated expressions surrounded by curly braces example : int arr[5] = new int[5]; and int arr[] = { 0, 1, 2, 3, 4};
+
+3. What will be the output of the following Java code?
+
+    class array_output 
+    {
+        public static void main(String args[]) 
+        {
+            int array_variable [] = new int[10];
+	    for (int i = 0; i < 10; ++i) 
+            {
+                array_variable[i] = i;
+                System.out.print(array_variable[i] + " ");
+                i++;
+            }
+        } 
+    }
+a) 0 2 4 6 8
+b) 1 3 5 7 9
+c) 0 1 2 3 4 5 6 7 8 9
+d) 1 2 3 4 5 6 7 8 9 10
+Answer: a
+Explanation: When an array is declared using new operator then all of its elements are initialized to 0 automatically. for loop body is executed 5 times as whenever controls comes in the loop i value is incremented twice, first by i++ in body of loop then by ++i in increment condition of for loop.
+output:
+$ javac array_output.java
+$ java array_output
+0 2 4 6 8
+
+4. What will be the output of the following Java code?
+
+    class multidimention_array 
+    {
+        public static void main(String args[])
+        {
+            int arr[][] = new int[3][];
+            arr[0] = new int[1];
+            arr[1] = new int[2];
+            arr[2] = new int[3];               
+	    int sum = 0;
+	    for (int i = 0; i < 3; ++i) 
+	        for (int j = 0; j < i + 1; ++j)
+                    arr[i][j] = j + 1;
+	    for (int i = 0; i < 3; ++i) 
+	        for (int j = 0; j < i + 1; ++j)
+                    sum + = arr[i][j];
+	    System.out.print(sum); 	
+        } 
+    }
+a) 11
+b) 10
+c) 13
+d) 14
+Answer: b
+Explanation: arr[][] is a 2D array, array has been allotted memory in parts. 1st row contains 1 element, 2nd row contains 2 elements and 3rd row contains 3 elements. each element of array is given i + j value in loop. sum contains addition of all the elements of the array.
+output:
+$ javac multidimention_array.java
+$ java multidimention_array
+10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
