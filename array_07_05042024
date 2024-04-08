@@ -1,0 +1,29 @@
+1.Which of the following is not a valid way to declare an array in Java?
+(a) int arr[] = new int;
+(b) int[] arr = new int;
+(c) int arr = new int;
+(d) int arr = {1, 2, 3, 4, 5 };                     
+
+2.What is the length of the array declared in the following code?
+Java
+int[] arr = new int[5];
+(a) 4
+(b) 5
+(c) 6
+(d) 7.                                    
+
+3. What is the value of the element at index 2 of the array declared in the following code?
+Java
+int[] arr = {1, 2, 3, 4, 5};s2  a1
+(a) 1
+(b) 2
+(c) 3
+(d) 4
+
+4.Which of the following is a valid way to access the element at index 2 of the array declared in the following code?
+Java
+int[] arr = {1, 2, 3, 4, 5};
+(a) arr;
+(b) arr(2);
+(c) arr.get(2);
+(d) arr.at(2);
